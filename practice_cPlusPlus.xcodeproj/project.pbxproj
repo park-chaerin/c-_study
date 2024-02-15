@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		FA33609D2B7E137900ED812E /* practice_cPlusPlus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = practice_cPlusPlus; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3360A02B7E137900ED812E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FA3360A72B7E193A00ED812E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		FA3360942B7E137900ED812E = {
 			isa = PBXGroup;
 			children = (
+				FA3360A72B7E193A00ED812E /* README.md */,
 				FA33609F2B7E137900ED812E /* practice_cPlusPlus */,
 				FA33609E2B7E137900ED812E /* Products */,
 			);

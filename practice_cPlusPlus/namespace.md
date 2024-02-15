@@ -89,3 +89,41 @@ std::cout << std:endl;
 
 //이렇게 사용하면, 화면에 엔터를 하나 출력해줌.
 ```
+
+# 이름없는 namespace
+- c++에서는 namespace에 굳이 이름을 설정하지 않아도 됨.
+- 이 경우 해당 namespace에 정의된 것들은 해당 파일 안에서만 접근할 수 있게 됨. => 마치 static 키워드를 사용한 것과 같은 효과!
+
+```c++
+#include <iostream>
+
+namespace{
+//이 함수는 이 파일 안에서만 사용 가능함.
+//마치 static int OnlyInThisFile()과 동일.
+int OnlyInThisFile() {}
+
+//이 변수도 static int x와 동일.
+int only_in_this_file = 0;
+}   //namespace
+
+int main() {
+OnlyInThisFile();
+only_in_this_file = 3;
+}
+```
+-> 예를 들어 위 OnlyInThisFile 함수나 only_in_this_file 변수는 해당 파일 안에서만 접근 가능!
+
+# 생각 해보기
+아래 문장은 화면에 어떻게 출력될까?
+
+```c++
+std::cout << "hi" <<std::endl
+          << "my name is "
+          << "Chaerin" << std::endl;
+```
+
+요렇게 출력됩니다~
+```c++
+hi
+my name is Chaerin
+```
